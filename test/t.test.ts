@@ -31,6 +31,16 @@ test('None element provided', () => {
     expect(result).toStrictEqual([])
 })
 
+
+
+test('One element (Size: 20) which is a multiple of lenght 40', () => {
+
+    const result = myFunction(40, [20]);
+
+    expect(result).toStrictEqual([[20, 20]])
+})
+
+
 // length too small < just one element for example length 50, elements : 60, 80
 // empty element, none element
 // exact fit with only one element, example length 70 and just one element of 70
