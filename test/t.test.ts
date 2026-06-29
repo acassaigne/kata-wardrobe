@@ -2,9 +2,10 @@ import {expect, test} from 'vitest'
 
 function myFunction(length: number, elements: number[]): number[][] {
     const tmpResult: number[][] = [];
-    if (elements != undefined && elements.length === 0) return tmpResult;
-    if (elements[0] > length) return tmpResult;
-    tmpResult.push([elements[0]]);
+    if (elements == undefined || elements.length === 0) return tmpResult;
+    const firstElement = elements[0];
+    if (firstElement === undefined || firstElement > length) return tmpResult;
+    tmpResult.push([firstElement]);
     return tmpResult
 
 }
