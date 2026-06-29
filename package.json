@@ -2,6 +2,10 @@
   "name": "kata-wardrobe",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "vitest": "^4.1.9"
